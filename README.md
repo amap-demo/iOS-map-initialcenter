@@ -6,3 +6,15 @@
 
 ## 功能描述 ##
 基于3D地图SDK，改变了地图初始时中心点坐标。
+
+## 核心类/接口 ##
+| 类    | 接口  | 说明   | 版本  |
+| -----|:-----:|:-----:|:-----:|
+| MAMapView	| CLLocationCoordinate2D centerCoordinate | 当前地图的中心点，改变该值时，地图的比例尺级别不会发生变化 | v4.0.0 |
+
+## 核心难点 ##
+
+```
+// 地图中心点为杭州
+    self.mapView.centerCoordinate = CLLocationCoordinate2DMake(30.245122, 120.147589);
+```
