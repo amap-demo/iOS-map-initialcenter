@@ -24,6 +24,7 @@
     self.mapView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     self.mapView.delegate = self;
     
+    //改变地图中心点
     self.mapView.centerCoordinate = CLLocationCoordinate2DMake(self.latitude, self.longitude);
     
     [self.view addSubview:self.mapView];

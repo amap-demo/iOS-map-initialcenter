@@ -15,6 +15,7 @@
 ## 核心难点 ##
 
 ```
-// 地图中心点为杭州
-    self.mapView.centerCoordinate = CLLocationCoordinate2DMake(30.245122, 120.147589);
+//改变地图中心点
+self.mapView.centerCoordinate = CLLocationCoordinate2DMake(self.latitude, self.longitude);
+
 ```
