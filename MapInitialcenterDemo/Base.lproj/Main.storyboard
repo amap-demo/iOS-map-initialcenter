@@ -1,26 +1,101 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xlv-cX-mbY">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="Mnr-dE-BYj">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <navigationController id="xlv-cX-mbY" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CaX-XZ-YGJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vsb-51-xj5" kind="relationship" relationship="rootViewController" id="eYd-Nv-PIx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cqh-XD-b0m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1862" y="37"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="wrC-lb-ab8">
+            <objects>
+                <viewController id="vsb-51-xj5" customClass="RootViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="BZo-ba-FsR"/>
+                        <viewControllerLayoutGuide type="bottom" id="NWK-7m-1wj"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="xWO-ma-E8V">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76C-Tx-JJU">
+                                <rect key="frame" x="107.5" y="158.5" width="160" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="5hX-AU-GRD"/>
+                                    <constraint firstAttribute="width" constant="160" id="zJV-8m-XOX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="北京">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cityBtnClick:" destination="vsb-51-xj5" eventType="touchUpInside" id="SWE-1C-8Sw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Klt-8U-jm2">
+                                <rect key="frame" x="107" y="288.5" width="160" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="3AM-Pi-cOR"/>
+                                    <constraint firstAttribute="height" constant="90" id="7uO-CP-pEC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="杭州"/>
+                                <connections>
+                                    <action selector="cityBtnClick:" destination="vsb-51-xj5" eventType="touchUpInside" id="44h-NS-4y2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDc-AG-ANb">
+                                <rect key="frame" x="107.5" y="419" width="160" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="IuQ-8L-kSI"/>
+                                    <constraint firstAttribute="width" constant="160" id="xdQ-DI-1vu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="上海"/>
+                                <connections>
+                                    <action selector="cityBtnClick:" destination="vsb-51-xj5" eventType="touchUpInside" id="9xs-5z-QCB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.70588235294117641" green="0.70588235294117641" blue="0.70588235294117641" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="JDc-AG-ANb" firstAttribute="centerY" secondItem="xWO-ma-E8V" secondAttribute="centerY" constant="130" id="Htb-sP-GKz"/>
+                            <constraint firstItem="76C-Tx-JJU" firstAttribute="centerY" secondItem="xWO-ma-E8V" secondAttribute="centerY" constant="-130" id="Kjq-wK-bUv"/>
+                            <constraint firstItem="76C-Tx-JJU" firstAttribute="centerX" secondItem="xWO-ma-E8V" secondAttribute="centerX" id="SQ7-Lc-WX8"/>
+                            <constraint firstItem="JDc-AG-ANb" firstAttribute="centerX" secondItem="xWO-ma-E8V" secondAttribute="centerX" id="cAc-fh-bH9"/>
+                            <constraint firstItem="Klt-8U-jm2" firstAttribute="centerX" secondItem="xWO-ma-E8V" secondAttribute="centerX" id="sD7-SW-jRI"/>
+                            <constraint firstItem="Klt-8U-jm2" firstAttribute="centerY" secondItem="xWO-ma-E8V" secondAttribute="centerY" id="wx0-ef-bdz"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="mvW-XB-Moq"/>
+                    <connections>
+                        <outlet property="beijingBtn" destination="76C-Tx-JJU" id="Qmp-e3-qwn"/>
+                        <outlet property="hangzhouBtn" destination="Klt-8U-jm2" id="MA6-zR-M5N"/>
+                        <outlet property="shanghaiBtn" destination="JDc-AG-ANb" id="2i9-Te-FBh"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wfE-2G-mcD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-783.20000000000005" y="44.527736131934034"/>
         </scene>
     </scenes>
 </document>

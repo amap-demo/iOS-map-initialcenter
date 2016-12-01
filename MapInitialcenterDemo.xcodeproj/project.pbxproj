@@ -10,10 +10,12 @@
 		6EDBE64214A426B7918EE4D0 /* libPods-MapInitialcenterDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A767B46892BEAB37B0B3EAE9 /* libPods-MapInitialcenterDemo.a */; };
 		81A276F51DCB3CF5002A267E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A276F41DCB3CF5002A267E /* main.m */; };
 		81A276F81DCB3CF5002A267E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A276F71DCB3CF5002A267E /* AppDelegate.m */; };
-		81A276FB1DCB3CF5002A267E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A276FA1DCB3CF5002A267E /* ViewController.m */; };
 		81A276FE1DCB3CF5002A267E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81A276FC1DCB3CF5002A267E /* Main.storyboard */; };
 		81A277001DCB3CF5002A267E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81A276FF1DCB3CF5002A267E /* Assets.xcassets */; };
 		81A277031DCB3CF5002A267E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81A277011DCB3CF5002A267E /* LaunchScreen.storyboard */; };
+		D96AE6621DF056ED00E465F9 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D96AE6611DF056ED00E465F9 /* RootViewController.m */; };
+		D96AE6661DF057F400E465F9 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D96AE6641DF057F400E465F9 /* MapViewController.m */; };
+		D96AE6671DF057F400E465F9 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D96AE6651DF057F400E465F9 /* MapViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +23,17 @@
 		81A276F41DCB3CF5002A267E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		81A276F61DCB3CF5002A267E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		81A276F71DCB3CF5002A267E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		81A276F91DCB3CF5002A267E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		81A276FA1DCB3CF5002A267E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		81A276FD1DCB3CF5002A267E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		81A276FF1DCB3CF5002A267E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81A277021DCB3CF5002A267E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81A277041DCB3CF5002A267E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B53371C8AA7D9C02DECD953 /* Pods-MapInitialcenterDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapInitialcenterDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapInitialcenterDemo/Pods-MapInitialcenterDemo.release.xcconfig"; sourceTree = "<group>"; };
 		A767B46892BEAB37B0B3EAE9 /* libPods-MapInitialcenterDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MapInitialcenterDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D96AE6601DF056ED00E465F9 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		D96AE6611DF056ED00E465F9 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		D96AE6631DF057F400E465F9 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		D96AE6641DF057F400E465F9 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		D96AE6651DF057F400E465F9 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		E5DB7B624D12C4910B827B10 /* Pods-MapInitialcenterDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapInitialcenterDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapInitialcenterDemo/Pods-MapInitialcenterDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,8 +81,11 @@
 			children = (
 				81A276F61DCB3CF5002A267E /* AppDelegate.h */,
 				81A276F71DCB3CF5002A267E /* AppDelegate.m */,
-				81A276F91DCB3CF5002A267E /* ViewController.h */,
-				81A276FA1DCB3CF5002A267E /* ViewController.m */,
+				D96AE6631DF057F400E465F9 /* MapViewController.h */,
+				D96AE6641DF057F400E465F9 /* MapViewController.m */,
+				D96AE6651DF057F400E465F9 /* MapViewController.xib */,
+				D96AE6601DF056ED00E465F9 /* RootViewController.h */,
+				D96AE6611DF056ED00E465F9 /* RootViewController.m */,
 				81A276FC1DCB3CF5002A267E /* Main.storyboard */,
 				81A276FF1DCB3CF5002A267E /* Assets.xcassets */,
 				81A277011DCB3CF5002A267E /* LaunchScreen.storyboard */,
@@ -137,7 +145,7 @@
 				TargetAttributes = {
 					81A276EF1DCB3CF5002A267E = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = YMJ372W38W;
+						DevelopmentTeam = 9FMAU64797;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -168,6 +176,7 @@
 				81A277031DCB3CF5002A267E /* LaunchScreen.storyboard in Resources */,
 				81A277001DCB3CF5002A267E /* Assets.xcassets in Resources */,
 				81A276FE1DCB3CF5002A267E /* Main.storyboard in Resources */,
+				D96AE6671DF057F400E465F9 /* MapViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,8 +235,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81A276FB1DCB3CF5002A267E /* ViewController.m in Sources */,
 				81A276F81DCB3CF5002A267E /* AppDelegate.m in Sources */,
+				D96AE6661DF057F400E465F9 /* MapViewController.m in Sources */,
+				D96AE6621DF056ED00E465F9 /* RootViewController.m in Sources */,
 				81A276F51DCB3CF5002A267E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,7 +357,7 @@
 			baseConfigurationReference = E5DB7B624D12C4910B827B10 /* Pods-MapInitialcenterDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YMJ372W38W;
+				DEVELOPMENT_TEAM = 9FMAU64797;
 				INFOPLIST_FILE = MapInitialcenterDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -361,7 +371,7 @@
 			baseConfigurationReference = 8B53371C8AA7D9C02DECD953 /* Pods-MapInitialcenterDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YMJ372W38W;
+				DEVELOPMENT_TEAM = 9FMAU64797;
 				INFOPLIST_FILE = MapInitialcenterDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

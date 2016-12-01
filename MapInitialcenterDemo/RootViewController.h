@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  RootViewController.h
 //  MapInitialcenterDemo
 //
-//  Created by xiaoming han on 16/11/3.
+//  Created by eidan on 16/12/1.
 //  Copyright © 2016年 AutoNavi. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface RootViewController : UIViewController
 
 @end
-
