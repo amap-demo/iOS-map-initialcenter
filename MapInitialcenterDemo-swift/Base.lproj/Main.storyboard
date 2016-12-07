@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="WlK-2P-6Om">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="5Gc-BT-ABw">
+            <objects>
+                <navigationController id="WlK-2P-6Om" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jN2-ei-rgi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="tEP-nO-ncO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MLL-Kf-YpH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1631" y="249"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MapInitialcenterDemo_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uk7-qf-bJc">
+                                <rect key="frame" x="108" y="158" width="160" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="ogB-8D-zHf"/>
+                                    <constraint firstAttribute="width" constant="160" id="ycD-Fw-Gs8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="北京">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cityBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nBb-nt-UMT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GfC-yn-3sm">
+                                <rect key="frame" x="107" y="288" width="160" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="Y2Y-Us-GCi"/>
+                                    <constraint firstAttribute="width" constant="160" id="khL-f4-XPa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="杭州"/>
+                                <connections>
+                                    <action selector="cityBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vvv-zn-vLV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyY-be-o55">
+                                <rect key="frame" x="108" y="419" width="160" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="BjZ-tM-ndo"/>
+                                    <constraint firstAttribute="height" constant="90" id="iFF-cP-EBt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="上海"/>
+                                <connections>
+                                    <action selector="cityBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rxB-Qz-3PW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.70588235290000001" green="0.70588235290000001" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="uk7-qf-bJc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-130.5" id="BLh-JW-zdL"/>
+                            <constraint firstItem="yyY-be-o55" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="130.5" id="EQR-CF-soi"/>
+                            <constraint firstItem="yyY-be-o55" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MHT-eD-WsY"/>
+                            <constraint firstItem="uk7-qf-bJc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RdO-aL-jRx"/>
+                            <constraint firstItem="GfC-yn-3sm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kfn-0O-R3v"/>
+                            <constraint firstItem="GfC-yn-3sm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u2G-Jt-66q"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="e4G-nq-Hna"/>
+                    <connections>
+                        <outlet property="beijingBtn" destination="uk7-qf-bJc" id="acV-CV-Fln"/>
+                        <outlet property="hangzhouBtn" destination="GfC-yn-3sm" id="9gs-uX-Ti5"/>
+                        <outlet property="shanghaiBtn" destination="yyY-be-o55" id="eXq-62-c4i"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-550" y="-304"/>
+        </scene>
+    </scenes>
+</document>

@@ -14,8 +14,20 @@
 
 ## 核心难点 ##
 
+`Objective-C`
+
 ```
 //改变地图中心点
 self.mapView.centerCoordinate = CLLocationCoordinate2DMake(self.latitude, self.longitude);
 
 ```
+
+`Swift`
+
+````
+//改变地图中心点
+self.mapView.centerCoordinate = CLLocationCoordinate2D.init(latitude: latitude, longitude: longitude);
+
+````
+
+
