@@ -520,14 +520,14 @@
 		6A55DE771DFD5A4700AFFB69 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = YMJ372W38W;
 				INFOPLIST_FILE = MapInitialcenterDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.autonavi.MapInitialcenterDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a892512d-fe94-4702-b716-0b66880b936d";
-				PROVISIONING_PROFILE_SPECIFIER = openPlatformInhouse;
+				PROVISIONING_PROFILE = "d723e77c-6c92-4e6a-98d7-8717d0b88b87";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatform_development;
 				TEST_TARGET_NAME = MapInitialcenterDemo;
 			};
 			name = Release;
@@ -703,6 +703,7 @@
 				6A55DE771DFD5A4700AFFB69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		81A276EB1DCB3CF5002A267E /* Build configuration list for PBXProject "MapInitialcenterDemo" */ = {
 			isa = XCConfigurationList;
