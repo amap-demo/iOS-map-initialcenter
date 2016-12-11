@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0DC7FCCB320E309F698115A0 /* libPods-MapInitialcenterDemo-swift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E12F376509BB08F4610D1CA /* libPods-MapInitialcenterDemo-swift.a */; };
+		6A55DE721DFD5A4700AFFB69 /* MapInitialcenterDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A55DE711DFD5A4700AFFB69 /* MapInitialcenterDemoUITests.m */; };
 		6EDBE64214A426B7918EE4D0 /* libPods-MapInitialcenterDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A767B46892BEAB37B0B3EAE9 /* libPods-MapInitialcenterDemo.a */; };
 		81A276F51DCB3CF5002A267E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A276F41DCB3CF5002A267E /* main.m */; };
 		81A276F81DCB3CF5002A267E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81A276F71DCB3CF5002A267E /* AppDelegate.m */; };
@@ -26,10 +27,23 @@
 		D96AE6C51DF7A79C00E465F9 /* ShowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D96AE6C31DF7A79C00E465F9 /* ShowViewController.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6A55DE741DFD5A4700AFFB69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81A276E81DCB3CF5002A267E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81A276EF1DCB3CF5002A267E;
+			remoteInfo = MapInitialcenterDemo;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		1E12F376509BB08F4610D1CA /* libPods-MapInitialcenterDemo-swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MapInitialcenterDemo-swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		287B1E592A1DD41552CA2760 /* Pods-MapInitialcenterDemo-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapInitialcenterDemo-swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapInitialcenterDemo-swift/Pods-MapInitialcenterDemo-swift.debug.xcconfig"; sourceTree = "<group>"; };
 		587D21FCD97F20E4A77D581D /* Pods-MapInitialcenterDemo-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapInitialcenterDemo-swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapInitialcenterDemo-swift/Pods-MapInitialcenterDemo-swift.release.xcconfig"; sourceTree = "<group>"; };
+		6A55DE6F1DFD5A4700AFFB69 /* MapInitialcenterDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapInitialcenterDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A55DE711DFD5A4700AFFB69 /* MapInitialcenterDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapInitialcenterDemoUITests.m; sourceTree = "<group>"; };
+		6A55DE731DFD5A4700AFFB69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81A276F01DCB3CF5002A267E /* MapInitialcenterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapInitialcenterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81A276F41DCB3CF5002A267E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		81A276F61DCB3CF5002A267E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,6 +73,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6A55DE6C1DFD5A4700AFFB69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		81A276ED1DCB3CF5002A267E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -89,11 +110,21 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		6A55DE701DFD5A4700AFFB69 /* MapInitialcenterDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6A55DE711DFD5A4700AFFB69 /* MapInitialcenterDemoUITests.m */,
+				6A55DE731DFD5A4700AFFB69 /* Info.plist */,
+			);
+			path = MapInitialcenterDemoUITests;
+			sourceTree = "<group>";
+		};
 		81A276E71DCB3CF5002A267E = {
 			isa = PBXGroup;
 			children = (
 				81A276F21DCB3CF5002A267E /* MapInitialcenterDemo */,
 				D96AE6A81DF6F7B300E465F9 /* MapInitialcenterDemo-swift */,
+				6A55DE701DFD5A4700AFFB69 /* MapInitialcenterDemoUITests */,
 				81A276F11DCB3CF5002A267E /* Products */,
 				09283371B9288C74909A9842 /* Pods */,
 				BC9E1DA61E7FF46C666726B8 /* Frameworks */,
@@ -105,6 +136,7 @@
 			children = (
 				81A276F01DCB3CF5002A267E /* MapInitialcenterDemo.app */,
 				D96AE6A71DF6F7B300E465F9 /* MapInitialcenterDemo-swift.app */,
+				6A55DE6F1DFD5A4700AFFB69 /* MapInitialcenterDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,6 +196,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6A55DE6E1DFD5A4700AFFB69 /* MapInitialcenterDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A55DE781DFD5A4700AFFB69 /* Build configuration list for PBXNativeTarget "MapInitialcenterDemoUITests" */;
+			buildPhases = (
+				6A55DE6B1DFD5A4700AFFB69 /* Sources */,
+				6A55DE6C1DFD5A4700AFFB69 /* Frameworks */,
+				6A55DE6D1DFD5A4700AFFB69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A55DE751DFD5A4700AFFB69 /* PBXTargetDependency */,
+			);
+			name = MapInitialcenterDemoUITests;
+			productName = MapInitialcenterDemoUITests;
+			productReference = 6A55DE6F1DFD5A4700AFFB69 /* MapInitialcenterDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		81A276EF1DCB3CF5002A267E /* MapInitialcenterDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 81A277071DCB3CF5002A267E /* Build configuration list for PBXNativeTarget "MapInitialcenterDemo" */;
@@ -214,6 +264,12 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = AutoNavi;
 				TargetAttributes = {
+					6A55DE6E1DFD5A4700AFFB69 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = YMJ372W38W;
+						ProvisioningStyle = Manual;
+						TestTargetID = 81A276EF1DCB3CF5002A267E;
+					};
 					81A276EF1DCB3CF5002A267E = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = YMJ372W38W;
@@ -241,11 +297,19 @@
 			targets = (
 				81A276EF1DCB3CF5002A267E /* MapInitialcenterDemo */,
 				D96AE6A61DF6F7B300E465F9 /* MapInitialcenterDemo-swift */,
+				6A55DE6E1DFD5A4700AFFB69 /* MapInitialcenterDemoUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6A55DE6D1DFD5A4700AFFB69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		81A276EE1DCB3CF5002A267E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -364,6 +428,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6A55DE6B1DFD5A4700AFFB69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A55DE721DFD5A4700AFFB69 /* MapInitialcenterDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		81A276EC1DCB3CF5002A267E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -386,6 +458,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6A55DE751DFD5A4700AFFB69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81A276EF1DCB3CF5002A267E /* MapInitialcenterDemo */;
+			targetProxy = 6A55DE741DFD5A4700AFFB69 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		81A276FC1DCB3CF5002A267E /* Main.storyboard */ = {
@@ -423,6 +503,35 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6A55DE761DFD5A4700AFFB69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = YMJ372W38W;
+				INFOPLIST_FILE = MapInitialcenterDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.autonavi.MapInitialcenterDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d723e77c-6c92-4e6a-98d7-8717d0b88b87";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatform_development;
+				TEST_TARGET_NAME = MapInitialcenterDemo;
+			};
+			name = Debug;
+		};
+		6A55DE771DFD5A4700AFFB69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = YMJ372W38W;
+				INFOPLIST_FILE = MapInitialcenterDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.autonavi.MapInitialcenterDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a892512d-fe94-4702-b716-0b66880b936d";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatformInhouse;
+				TEST_TARGET_NAME = MapInitialcenterDemo;
+			};
+			name = Release;
+		};
 		81A277051DCB3CF5002A267E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -532,12 +641,15 @@
 			baseConfigurationReference = 8B53371C8AA7D9C02DECD953 /* Pods-MapInitialcenterDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = YMJ372W38W;
 				INFOPLIST_FILE = MapInitialcenterDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.autonavi.MapInitialcenterDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a892512d-fe94-4702-b716-0b66880b936d";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatformInhouse;
 			};
 			name = Release;
 		};
@@ -566,12 +678,15 @@
 			baseConfigurationReference = 587D21FCD97F20E4A77D581D /* Pods-MapInitialcenterDemo-swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = YMJ372W38W;
 				INFOPLIST_FILE = "MapInitialcenterDemo-swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.autonavi.MapInitialcenterDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a892512d-fe94-4702-b716-0b66880b936d";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatformInhouse;
 				SWIFT_OBJC_BRIDGING_HEADER = "./MapInitialcenterDemo-swift/Swift-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
@@ -581,6 +696,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6A55DE781DFD5A4700AFFB69 /* Build configuration list for PBXNativeTarget "MapInitialcenterDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A55DE761DFD5A4700AFFB69 /* Debug */,
+				6A55DE771DFD5A4700AFFB69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		81A276EB1DCB3CF5002A267E /* Build configuration list for PBXProject "MapInitialcenterDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
