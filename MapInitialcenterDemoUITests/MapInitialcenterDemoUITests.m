@@ -40,7 +40,7 @@
     XCUIApplication *app = [[XCUIApplication alloc] init];
     [app.buttons[@"\u5317\u4eac"] tap];
     
-    XCUIElement *backButton = [[[app.navigationBars[@"\u9009\u62e9\u5730\u56fe\u4e2d\u5fc3\u70b9\u6240\u5728\u57ce\u5e02"] childrenMatchingType:XCUIElementTypeButton] matchingIdentifier:@"Back"] elementBoundByIndex:0];
+    XCUIElement *backButton = app.navigationBars[@"\u9009\u62e9\u5730\u56fe\u4e2d\u5fc3\u70b9\u6240\u5728\u57ce\u5e02"].buttons[@"\u9009\u62e9\u5730\u56fe\u4e2d\u5fc3\u70b9\u6240\u5728\u57ce\u5e02"];
     [backButton tap];
     [app.buttons[@"\u676d\u5dde"] tap];
     [backButton tap];
