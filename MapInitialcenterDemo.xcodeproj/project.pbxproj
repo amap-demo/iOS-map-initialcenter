@@ -222,7 +222,6 @@
 				81A276EC1DCB3CF5002A267E /* Sources */,
 				81A276ED1DCB3CF5002A267E /* Frameworks */,
 				81A276EE1DCB3CF5002A267E /* Resources */,
-				F39ED428B9339EF86FB0AE01 /* [CP] Embed Pods Frameworks */,
 				95A209BABB657EB762E9021C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -242,7 +241,6 @@
 				D96AE6A31DF6F7B300E465F9 /* Sources */,
 				D96AE6A41DF6F7B300E465F9 /* Frameworks */,
 				D96AE6A51DF6F7B300E465F9 /* Resources */,
-				42D949C3E94B366970FDC3D2 /* [CP] Embed Pods Frameworks */,
 				799F41FBAFA4ADF7286CB514 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -335,21 +333,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		42D949C3E94B366970FDC3D2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MapInitialcenterDemo-swift/Pods-MapInitialcenterDemo-swift-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		49D093D8EB600A1AAF9EF721 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -374,16 +357,16 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MapInitialcenterDemo-swift/Pods-MapInitialcenterDemo-swift-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-MapInitialcenterDemo-swift/Pods-MapInitialcenterDemo-swift-resources.sh",
 				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MapInitialcenterDemo-swift/Pods-MapInitialcenterDemo-swift-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MapInitialcenterDemo-swift/Pods-MapInitialcenterDemo-swift-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		95A209BABB657EB762E9021C /* [CP] Copy Pods Resources */ = {
@@ -392,16 +375,16 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MapInitialcenterDemo/Pods-MapInitialcenterDemo-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-MapInitialcenterDemo/Pods-MapInitialcenterDemo-resources.sh",
 				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MapInitialcenterDemo/Pods-MapInitialcenterDemo-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MapInitialcenterDemo/Pods-MapInitialcenterDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9AAF8057F59EDA31DA01B556 /* [CP] Check Pods Manifest.lock */ = {
@@ -420,21 +403,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F39ED428B9339EF86FB0AE01 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MapInitialcenterDemo/Pods-MapInitialcenterDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
